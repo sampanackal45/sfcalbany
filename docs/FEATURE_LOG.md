@@ -1,1 +1,2 @@
-
+Use this md file to track what you did. Be short and simple, but make sure to put every change you do. 
+I will do a lot of session for this project so codex history will never save, so use this so you can know what you have already done. 
