@@ -15,8 +15,8 @@ function ContactVisitCTA() {
           <p className="eyebrow">Visit SFCA</p>
           <h2 id="visit-heading">Join Us This Sunday</h2>
           <p>
-            We would love to welcome you and your family to Sharon Fellowship Church
-            of Albany. Come worship with us at {churchInfo.address.full}.
+            We would love to welcome you and your family to {churchInfo.displayName}.
+            Come worship with us at {churchInfo.address.full}.
           </p>
           <div className="visit-cta__actions">
             <Button href={churchInfo.directionsUrl} icon={MapPin} iconPosition="left">
@@ -29,6 +29,9 @@ function ContactVisitCTA() {
         </Reveal>
 
         <Reveal className="visit-cta__contacts" delay={0.1}>
+          <div className="visit-cta__image" aria-hidden="true">
+            <img src={churchInfo.assets.visitImage} alt="" loading="lazy" />
+          </div>
           <ContactCard icon={MapPin} title="Address" href={churchInfo.directionsUrl} external>
             {churchInfo.address.full}
           </ContactCard>

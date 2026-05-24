@@ -4,7 +4,6 @@ import Container from "../../ui/Container";
 import Reveal from "../../ui/Reveal";
 import Section from "../../ui/Section";
 import { ctas } from "../../../data/ctas";
-import { serviceTimes } from "../../../data/serviceTimes";
 
 function LivePreview() {
   return (
@@ -15,7 +14,7 @@ function LivePreview() {
           <h2 id="live-heading">Watch Us Online</h2>
           <p>
             Join us online for worship through our official YouTube and Facebook
-            pages. Direct links are always available if you cannot join us in person.
+            pages.
           </p>
           <div className="live-preview__actions">
             <Button href={ctas.youtube.href} variant="light" icon={PlayCircle} iconPosition="left">
@@ -25,21 +24,19 @@ function LivePreview() {
               {ctas.facebook.label}
             </Button>
           </div>
+          <a className="live-preview__instagram" href={ctas.instagram.href} target="_blank" rel="noopener noreferrer">
+            {ctas.instagram.label}
+          </a>
         </Reveal>
 
         <Reveal className="live-preview__panel" delay={0.1}>
           <div className="live-preview__play" aria-hidden="true">
             <PlayCircle size={42} />
           </div>
-          <p className="live-preview__label">Sunday Worship Online</p>
-          <ul>
-            {serviceTimes.slice(0, 3).map((service) => (
-              <li key={service.name}>
-                <span>{service.name}</span>
-                <strong>{service.time}</strong>
-              </li>
-            ))}
-          </ul>
+          <p className="live-preview__label">Online Worship</p>
+          <p className="live-preview__panel-text">
+            Watch services and stay connected through the official SFCA online channels.
+          </p>
         </Reveal>
       </Container>
     </Section>

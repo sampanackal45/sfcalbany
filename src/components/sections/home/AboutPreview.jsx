@@ -3,7 +3,6 @@ import Button from "../../ui/Button";
 import Container from "../../ui/Container";
 import Reveal from "../../ui/Reveal";
 import Section from "../../ui/Section";
-import { aboutPreviewTags } from "../../../data/homeContent";
 import { ctas } from "../../../data/ctas";
 
 const aboutImages = [
@@ -29,15 +28,12 @@ function AboutPreview() {
           <p className="eyebrow">About SFCA</p>
           <h2 id="about-preview-heading">Justified. Sanctified. Glorified.</h2>
           <p>
-            At Sharon Fellowship Church of Albany, we are a community of believers
-            who gather to worship, grow, and serve together. Our mission is to love
-            God, love people, and make disciples. Whether you are new to faith or
-            have followed Jesus for years, we invite you to join us on this journey.
+            Sharon Fellowship Church Of Albany is a community of believers gathering
+            to worship, grow, and serve together through faith in Jesus Christ.
           </p>
-          <div className="about-preview__tags" aria-label="Church community highlights">
-            {aboutPreviewTags.map((tag) => (
-              <span key={tag}>{tag}</span>
-            ))}
+          <div className="about-preview__note">
+            <span>{ctas.planVisit.label}</span>
+            <p>New visitors, families, students, and neighbors are welcome to worship with us.</p>
           </div>
           <Button to={ctas.learnAbout.to} variant="secondary" icon={ArrowRight}>
             {ctas.learnAbout.label}

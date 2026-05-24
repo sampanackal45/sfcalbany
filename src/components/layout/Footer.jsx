@@ -13,7 +13,7 @@ function Footer() {
         <div className="site-footer__brand">
           <Link className="site-footer__logo-link" to="/" aria-label="Sharon Fellowship Church of Albany home">
             <img src={churchInfo.assets.logo} alt="" className="site-footer__logo" />
-            <span>{churchInfo.name}</span>
+            <span>{churchInfo.displayName}</span>
           </Link>
           <p>{churchInfo.motto}</p>
         </div>
@@ -63,7 +63,7 @@ function Footer() {
       </div>
 
       <div className="container site-footer__bottom">
-        <p>© {currentYear} Sharon Fellowship Church of Albany. All Rights Reserved.</p>
+        <p>© {currentYear} {churchInfo.displayName}. All Rights Reserved.</p>
       </div>
     </footer>
   );

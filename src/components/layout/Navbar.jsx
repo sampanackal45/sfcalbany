@@ -43,7 +43,6 @@ function Navbar() {
           <img src={churchInfo.assets.logo} alt="" className="navbar__logo" />
           <span className="navbar__brand-text">
             <span>{churchInfo.shortName}</span>
-            <span>{churchInfo.city}</span>
           </span>
         </Link>
 

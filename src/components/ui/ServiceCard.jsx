@@ -8,10 +8,8 @@ function ServiceCard({ service, delay = 0 }) {
         <Clock size={22} />
       </div>
       <div>
-        <p className="service-card__day">{service.day}</p>
         <h3>{service.name}</h3>
         <p className="service-card__time">{service.time}</p>
-        <p>{service.description}</p>
       </div>
     </Card>
   );

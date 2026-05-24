@@ -11,17 +11,13 @@ export const ctas = {
     label: "View Service Times",
     href: "#service-times",
   },
+  fullServiceTimes: {
+    label: "View Full Service Times",
+    to: "/services",
+  },
   learnAbout: {
-    label: "Learn More About SFCA",
+    label: "Learn More About Us",
     to: "/about",
-  },
-  exploreMissions: {
-    label: "Explore Missions",
-    to: "/missions",
-  },
-  viewGallery: {
-    label: "View Gallery",
-    to: "/gallery",
   },
   contact: {
     label: "Contact Us",
@@ -34,5 +30,9 @@ export const ctas = {
   facebook: {
     label: "Visit Facebook",
     href: "https://www.facebook.com/sfcalbany",
+  },
+  instagram: {
+    label: "Follow on Instagram",
+    href: "https://www.instagram.com/sfc_albany/",
   },
 };

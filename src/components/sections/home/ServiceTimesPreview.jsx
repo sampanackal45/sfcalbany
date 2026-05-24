@@ -1,10 +1,9 @@
-import { ArrowRight, MapPin } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Button from "../../ui/Button";
 import Container from "../../ui/Container";
 import Section from "../../ui/Section";
 import SectionHeader from "../../ui/SectionHeader";
 import ServiceCard from "../../ui/ServiceCard";
-import { churchInfo } from "../../../data/churchInfo";
 import { ctas } from "../../../data/ctas";
 import { serviceTimes } from "../../../data/serviceTimes";
 
@@ -15,16 +14,13 @@ function ServiceTimesPreview() {
         <div className="section-heading-row">
           <SectionHeader
             eyebrow="Join Us This Sunday"
-            title="Service Times"
+            title="Sunday Service Times"
             id="service-times-heading"
-            text="Worship with Sharon Fellowship Church of Albany in Telugu, English, or Malayalam. Children's Church is available during the Malayalam service."
+            text="A simple snapshot of our Sunday worship schedule."
           />
           <div className="section-heading-row__actions">
-            <Button href={churchInfo.directionsUrl} variant="secondary" icon={MapPin} iconPosition="left">
-              Get Directions
-            </Button>
-            <Button href={ctas.planVisit.href} variant="primary" icon={ArrowRight}>
-              {ctas.planVisit.label}
+            <Button to={ctas.fullServiceTimes.to} variant="secondary" icon={ArrowRight}>
+              {ctas.fullServiceTimes.label}
             </Button>
           </div>
         </div>

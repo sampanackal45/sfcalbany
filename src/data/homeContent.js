@@ -15,32 +15,3 @@ export const homeIdentityCards = [
     text: "Worshiping together with joy, and continually growing in faith.",
   },
 ];
-
-export const aboutPreviewTags = [
-  "Worship",
-  "Prayer",
-  "Fellowship",
-  "Albany, NY",
-  "Malayalam",
-  "English",
-  "Telugu",
-];
-
-export const missionsPreviewCards = [
-  {
-    title: "Local Outreach",
-    text: "Serving neighbors with the love and compassion of Christ.",
-  },
-  {
-    title: "Global Missions",
-    text: "Looking beyond the walls of the church with a heart for the Gospel.",
-  },
-  {
-    title: "Serving with Love",
-    text: "Encouraging a church family shaped by humility, prayer, and service.",
-  },
-  {
-    title: "Youth Involvement",
-    text: "Helping the next generation grow in faith and community.",
-  },
-];

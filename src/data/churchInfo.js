@@ -1,5 +1,6 @@
 export const churchInfo = {
   name: "Sharon Fellowship Church of Albany",
+  displayName: "Sharon Fellowship Church Of Albany",
   shortName: "SFCA",
   motto: "Justified. Sanctified. Glorified.",
   city: "Albany, NY",
@@ -23,6 +24,7 @@ export const churchInfo = {
     favicon: "/Resources/favicon.png",
     introVideo: "/Resources/Home/IntroVidCompressed.mp4",
     heroPoster: "/Resources/Hero Images/4.jpg",
+    visitImage: "/Resources/Pictures/Copy of Copy of DSC_0232-Enhanced-NR.jpg",
   },
   socialLinks: [
     {
@@ -39,5 +41,5 @@ export const churchInfo = {
     },
   ],
   directionsUrl:
-    "https://www.google.com/maps/search/?api=1&query=1781%20Western%20Ave%2C%20Albany%2C%20NY%2012203",
+    "https://www.google.com/maps/search/?api=1&query=Sharon+Fellowship+Church+of+Albany",
 };
