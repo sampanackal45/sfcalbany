@@ -1,0 +1,26 @@
+.card,
+.button,
+.navbar__link,
+.mobile-nav__link,
+.gallery-grid__item img,
+.pastor-card__media img,
+.contact-card {
+  transition:
+    transform var(--transition-smooth),
+    box-shadow var(--transition-smooth),
+    border-color var(--transition-smooth),
+    background var(--transition-smooth),
+    color var(--transition-smooth),
+    opacity var(--transition-smooth);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+  }
+}

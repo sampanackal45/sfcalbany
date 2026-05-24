@@ -1,0 +1,84 @@
+.button {
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  border: 1px solid transparent;
+  border-radius: var(--radius-lg);
+  padding: 0.78rem 1.08rem;
+  color: var(--color-white);
+  background: var(--color-primary-blue);
+  box-shadow: var(--shadow-blue);
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  background: var(--color-bright-blue);
+}
+
+.button--secondary {
+  color: var(--color-deep-blue);
+  background: var(--color-white);
+  border-color: rgb(var(--rgb-primary-blue) / 0.18);
+  box-shadow: 0 12px 30px rgb(var(--rgb-navy) / 0.08);
+}
+
+.button--secondary:hover {
+  color: var(--color-white);
+  background: var(--color-primary-blue);
+}
+
+.button--light {
+  color: var(--color-deep-blue);
+  background: var(--color-white);
+  border-color: rgb(var(--rgb-white) / 0.2);
+  box-shadow: none;
+}
+
+.button--light:hover {
+  color: var(--color-navy);
+  background: var(--color-sky-blue);
+}
+
+.button--ghost-light {
+  color: var(--color-white);
+  background: rgb(var(--rgb-white) / 0.08);
+  border-color: rgb(var(--rgb-white) / 0.22);
+  box-shadow: none;
+}
+
+.button--ghost-light:hover {
+  color: var(--color-navy);
+  background: var(--color-white);
+}
+
+.button--sm {
+  min-height: 40px;
+  padding: 0.62rem 0.88rem;
+  font-size: 0.92rem;
+}
+
+.card {
+  height: 100%;
+  border: 1px solid rgb(var(--rgb-navy) / 0.08);
+  border-radius: var(--radius-lg);
+  background: var(--color-white);
+  box-shadow: var(--shadow-card);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-soft);
+}
+
+@media (max-width: 520px) {
+  .button {
+    width: 100%;
+    white-space: normal;
+  }
+}
