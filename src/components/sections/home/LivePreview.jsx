@@ -29,14 +29,18 @@ function LivePreview() {
           </a>
         </Reveal>
 
-        <Reveal className="live-preview__panel" delay={0.1}>
-          <div className="live-preview__play" aria-hidden="true">
-            <PlayCircle size={42} />
+        <Reveal className="live-preview__video-card" delay={0.1}>
+          <div className="live-preview__video-shell">
+            <iframe
+              src={ctas.youtubeEmbed.href}
+              title="Sharon Fellowship Church of Albany Sunday livestream"
+              allow="autoplay; encrypted-media; picture-in-picture; web-share"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+            />
           </div>
-          <p className="live-preview__label">Online Worship</p>
-          <p className="live-preview__panel-text">
-            Watch services and stay connected through the official SFCA online channels.
-          </p>
+          <p>Livestream audio starts muted. You can unmute it manually in the player.</p>
         </Reveal>
       </Container>
     </Section>

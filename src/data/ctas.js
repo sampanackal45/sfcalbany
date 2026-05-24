@@ -25,7 +25,10 @@ export const ctas = {
   },
   youtube: {
     label: "Watch on YouTube",
-    href: "https://www.youtube.com/@sfcalbany",
+    href: "https://www.youtube.com/live/PmJOYETSs18?si=OiWs0svTxr-lqnbq",
+  },
+  youtubeEmbed: {
+    href: "https://www.youtube.com/embed/PmJOYETSs18?autoplay=1&mute=1&playsinline=1&rel=0",
   },
   facebook: {
     label: "Visit Facebook",

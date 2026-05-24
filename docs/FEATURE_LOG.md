@@ -17,3 +17,6 @@ I will do a lot of session for this project so codex history will never save, so
 - Polished navbar/logo presentation so the logo is no longer inside a white circle and remains readable across the hero and scrolled states.
 - Fixed `Get Directions` links to search for Sharon Fellowship Church of Albany in Google Maps.
 - Added uploaded imagery tastefully in the About and Visit sections without turning Home into a gallery page.
+- Added a slower, more intentional hero opening animation and subtle layered blue hero treatment.
+- Improved scrolled navbar logo contrast with a dark logo filter while keeping the transparent hero state clean.
+- Added a premium responsive YouTube livestream embed to the Watch Online section with muted autoplay and direct fallback links.
